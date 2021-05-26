@@ -1,4 +1,4 @@
-# Graph-Teory
+# Teoria dos Grafos - Implementações
 ## Aluno: Carllos Eduardo Ferreira Lopes
 
 ### Algoritmos
