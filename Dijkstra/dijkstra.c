@@ -203,11 +203,6 @@ void printa_grafo(Grafo *gr, int nro_vertices){
     }
 }
 
-void erro_entrada() {
-    printf("Erro nos valores de entrada\n");
-    printf("Vértice está fora dos limites de 0 a n - 1\n");
-    exit(-1);
-}
 
 int main() {
     int numero_vertices, grau_maximo, numero_arestas, eh_digrafo;
@@ -219,17 +214,10 @@ int main() {
     int origem, objetivo;
     scanf("%d %d", &origem, &objetivo);
 
-    if(origem < 0 || origem >= numero_vertices || objetivo < 0 || objetivo >= numero_vertices) {
-        erro_entrada();
-    }
 
     int i, v1, v2, peso;
     for(i = 0; i < numero_arestas; i++) {
         scanf("%d %d %d", &v1, &v2, &peso);
-        if(v1 < 0 || v1 >= numero_vertices || v2 < 0 || v2 >= numero_vertices) {
-            erro_entrada();
-        }
-        insere_aresta(gr, v1, v2, peso);
     }
 
     int ant[numero_vertices];
