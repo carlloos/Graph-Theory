@@ -14,12 +14,13 @@ struct HEAP {
 
 };typedef struct HEAP HEAP;
 
+typedef struct Adjacency_list Adjacency_list;
 struct Adjacency_list
 {
     lli item;
     lli weight;
     Adjacency_list *next;
-};typedef struct Adjacency_list Adjacency_list;
+};
 
 struct Vertex
 {
